@@ -1,0 +1,510 @@
+{
+  "animations" :
+  [
+    {
+      "name" : "animations_player",
+      "states" : 
+      [
+        {
+          "name" : "idle",
+          "beginID" : 0,
+          "endID" : 3,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "run",
+          "beginID" : 9,
+          "endID" : 14,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "hurt",
+          "beginID" : 18,
+          "endID" : 19,
+          "priority" : 1,
+          "loops" : false
+        },
+        {
+          "name" : "dead",
+          "beginID" : 27,
+          "endID" : 29,
+          "priority" : 2,
+          "loops" : false
+        }
+      ]
+    },
+    {
+      "name" : "animations_enemy_1",
+      "states" :
+      [
+        {
+          "name" : "idle",
+          "beginID" : 0,
+          "endID" : 5,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "run",
+          "beginID" : 12,
+          "endID" : 18,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "hurt",
+          "beginID" : 24,
+          "endID" : 26,
+          "priority" : 1,
+          "loops" : false
+        },
+        {
+          "name" : "dead",
+          "beginID" : 36,
+          "endID" : 45,
+          "priority" : 2,
+          "loops" : false
+        }
+      ]
+    },
+    {
+      "name" : "animations_enemy_2",
+      "states" :
+      [
+        {
+          "name" : "idle",
+          "beginID" : 0,
+          "endID" : 25,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "run",
+          "beginID" : 26,
+          "endID" : 31,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "hurt",
+          "beginID" : 39,
+          "endID" : 40,
+          "priority" : 1,
+          "loops" : false
+        },
+        {
+          "name" : "dead",
+          "beginID" : 52,
+          "endID" : 54,
+          "priority" : 2,
+          "loops" : false
+        }
+      ]
+    },
+    {
+      "name" : "animations_enemy_3",
+      "states" :
+      [
+        {
+          "name" : "idle",
+          "beginID" : 0,
+          "endID" : 14,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "run",
+          "beginID" : 16,
+          "endID" : 21,
+          "priority" : 0,
+          "loops" : true
+        },
+        {
+          "name" : "hurt",
+          "beginID" : 24,
+          "endID" : 26,
+          "priority" : 1,
+          "loops" : false
+        },
+        {
+          "name" : "dead",
+          "beginID" : 32,
+          "endID" : 37,
+          "priority" : 2,
+          "loops" : false
+        }
+      ]
+    }
+  ],
+  "blocks" :
+  {
+    "grid" :
+    [
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "x                                      x",
+      "x                                      x",
+      "x                                      x",
+      "x  x       x       x       x        x  x",
+      "x                                      x",
+      "x                                      x",
+      "x                                      x",
+      "x  x                                x  x",
+      "x                                      x",
+      "x          x       x       x           x",
+      "x                                      x",
+      "x  x                                x  x",
+      "x                                      x",
+      "x                                      x",
+      "x                                      x",
+      "x  x       x       x       x        x  x",
+      "x                                      x",
+      "x                                      x",
+      "x                                      x",
+      "x                                      x",
+      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    ],
+    "spriteSheet" : "sprite_block"
+  },
+  "clearPercent" : 100.0,
+  "collectibles" : 
+  [
+    {
+      "health" : 30,
+      "spriteID" : 0,
+      "spriteSheet" : "sprite_pickup",
+      "x" : 640,
+      "y" : 64
+    },
+    {
+      "health" : 30,
+      "spriteID" : 0,
+      "spriteSheet" : "sprite_pickup",
+      "x" : 640,
+      "y" : 576
+    }
+  ],
+  "guns" :
+  {
+      "pistol":
+      {
+          "bulletSprite" : "sprite_bullet",
+          "shootingSound" : "sound_pistol",
+          "hudSprite" : "sprite_pistol_HUD"
+      },
+      "shotgun":
+      {
+          "bulletSprite" : "sprite_bullet",
+          "shootingSound" : "sound_shotgun",
+          "hudSprite" : "sprite_shotgun_HUD"
+      }
+  },
+  "crosshair" :
+  {
+    "size" : 32,
+    "sprite" : "sprite_crosshair"
+  },
+  "enemies" :
+  [
+    {
+        "animations" : "animations_enemy_1",
+        "type": 1,
+        "x1": 64,
+        "y1": 576,
+        "x2": 1184,
+        "y2": 576,
+        "health": 10,
+        "hurtCooldown": 0.0,
+        "hurtSound": "sound_enemy_hurt_1",
+        "deathSound": "sound_enemy_death_1",
+        "spriteSheet": "sprite_enemy_1"
+    },
+    {
+        "animations" : "animations_enemy_1",
+        "type": 1,
+        "x1": 1184,
+        "y1": 64,
+        "x2": 64,
+        "y2": 64,
+        "health": 10,
+        "hurtCooldown": 0.0,
+        "hurtSound": "sound_enemy_hurt_1",
+        "deathSound": "sound_enemy_death_1",
+        "spriteSheet": "sprite_enemy_1"
+    },
+    {
+        "animations" : "animations_enemy_1",
+        "type": 1,
+        "x1": 64,
+        "y1": 128,
+        "x2": 64,
+        "y2": 448,
+        "health": 10,
+        "hurtCooldown": 0.0,
+        "hurtSound": "sound_enemy_hurt_1",
+        "deathSound": "sound_enemy_death_1",
+        "spriteSheet": "sprite_enemy_1"
+    },
+    {
+        "animations" : "animations_enemy_1",
+        "type": 1,
+        "x1": 1184,
+        "y1": 448,
+        "x2": 1184,
+        "y2": 128,
+        "health": 10,
+        "hurtCooldown": 0.0,
+        "hurtSound": "sound_enemy_hurt_1",
+        "deathSound": "sound_enemy_death_1",
+        "spriteSheet": "sprite_enemy_1"
+    },
+    {
+        "animations" : "animations_enemy_2",
+        "type": 2,
+        "x1": 448,
+        "y1": 192,
+        "health": 10,
+        "hurtCooldown": 0.0,
+        "hurtSound": "sound_enemy_hurt_2",
+        "deathSound": "sound_enemy_death_2",
+        "spriteSheet": "sprite_enemy_2",
+        "bulletSprite" : "sprite_bullet_2",
+        "shootingSound" : "sound_laser_big"
+    },
+    {
+        "animations" : "animations_enemy_2",
+        "type": 2,
+        "x1": 736,
+        "y1": 192,
+        "health": 10,
+        "hurtCooldown": 0.0,
+        "hurtSound": "sound_enemy_hurt_2",
+        "deathSound": "sound_enemy_death_2",
+        "spriteSheet": "sprite_enemy_2",
+        "bulletSprite" : "sprite_bullet_2",
+        "shootingSound" : "sound_laser_big"
+    }
+  ],
+  "goal" :
+  {
+    "sprite" : "sprite_goal",
+    "x" : 640,
+    "y" : 224
+  },
+  "healthBar" : 
+  {
+    "h" : 27,
+    "sprite" : "sprite_health_bar",
+    "w" : 198,
+    "x" : 64,
+    "y" : 656
+  },
+  "healthHUD" :
+  {
+    "h" : 138,
+    "sprite" : "sprite_health_HUD",
+    "w" : 258,
+    "x" : 10,
+    "y" : 550
+  },
+  "gunHUD" :
+  {
+    "h" : 78,
+    "defSprite" : "sprite_pistol_HUD",
+    "w" : 78,
+    "x" : 10,
+    "y" : 475
+  },
+  "loseText" :
+  {
+    "text" : "text_lose",
+    "x" : 500,
+    "y" : 350
+  },
+  "player" :
+  {
+    "animations" : "animations_player",
+    "dashCooldown" : 0.5,
+    "dashDistance" : 100,
+    "dashSpeed" : 500,
+    "deathSound" : "sound_player_death",
+    "h" : 32,
+    "health" : 100,
+    "hurtCooldown" : 0.5,
+    "hurtSound" : "sound_player_hurt",
+    "pickupHealthSound" : "sound_pickup_health",
+    "startingGuns" : [ "pistol", "shotgun"],
+    "speed" : 200,
+    "spriteSheet" : "sprite_player",
+    "w" : 32,
+    "x" : 640.0,
+    "y" : 416.0
+  },
+  "size" : 32,
+  "sounds" :
+  [
+    {
+      "file" : "final/PickupHealth.wav",
+      "name" : "sound_pickup_health"
+    },
+    {
+      "file" : "final/Pistol1.wav",
+      "name" : "sound_pistol"
+    },
+    {
+      "file" : "final/Shotgun.wav",
+      "name" : "sound_shotgun"
+    },
+    {
+      "file" : "final/PlayerHurt1.wav",
+      "name" : "sound_player_hurt"
+    },
+    {
+      "file" : "final/PlayerDeath.wav",
+      "name" : "sound_player_death"
+    },
+    {
+      "file" : "final/PlayerLaugh.wav",
+      "name" : "sound_win"
+    },
+    {
+      "file" : "final/EnemyHurt1.wav",
+      "name" : "sound_enemy_hurt_1"
+    },
+    {
+      "file" : "final/EnemyHurt2.wav",
+      "name" : "sound_enemy_hurt_2"
+    },
+    {
+      "file" : "final/EnemyHurt3.wav",
+      "name" : "sound_enemy_hurt_3"
+    },
+    {
+      "file" : "final/EnemyDeath1.wav",
+      "name" : "sound_enemy_death_1"
+    },
+    {
+      "file" : "final/EnemyDeath2.wav",
+      "name" : "sound_enemy_death_2"
+    },
+    {
+      "file" : "final/EnemyDeath3.wav",
+      "name" : "sound_enemy_death_3"
+    },
+    {
+      "file" : "final/LaserBig.wav",
+      "name" : "sound_laser_big"
+    },
+    {
+      "file" : "final/LaserSmall.wav",
+      "name" : "sound_laser_small"
+    }
+  ],
+  "music": {
+      "file": "final/Bones3.mp3",
+      "name": "music"
+  },
+  "spriteSheets" :
+  [
+    {
+      "file" : "final/PlayerSheet.png",
+      "name" : "sprite_player",
+      "spriteSize" : 24
+    },
+    {
+      "file" : "final/Enemy1.png",
+      "name" : "sprite_enemy_1",
+      "spriteSize" : 18
+    },
+    {
+      "file" : "final/Enemy2.png",
+      "name" : "sprite_enemy_2",
+      "spriteSize" : 18
+    },
+    {
+      "file" : "final/Enemy3.png",
+      "name" : "sprite_enemy_3",
+      "spriteSize" : 24
+    },
+    {
+      "file" : "final/Tile2.png",
+      "name" : "sprite_block",
+      "spriteSize" : 16
+    },
+    {
+      "file" : "final/Pickups.png",
+      "name" : "sprite_pickup",
+      "spriteSize" : 10
+    }
+  ],
+  "sprites" :
+  [
+    {
+      "file" : "final/crosshair.png",
+      "name" : "sprite_crosshair"
+    },
+    {
+      "file" : "final/PlayerHUD.png",
+      "name" : "sprite_health_HUD"
+    },
+    {
+      "file" : "final/Portal.png",
+      "name" : "sprite_goal"
+    },
+    {
+      "file" : "final/HealthBar.png",
+      "name" : "sprite_health_bar"
+    },
+    {
+      "file" : "final/Bullet.png",
+      "name" : "sprite_bullet"
+    },
+    {
+      "file" : "final/Bullet2.png",
+      "name" : "sprite_bullet_2"
+    },
+    {
+      "file" : "final/Weapon1Hud.png",
+      "name" : "sprite_pistol_HUD"
+    },
+    {
+      "file" : "final/Weapon2Hud.png",
+      "name" : "sprite_shotgun_HUD"
+    }
+  ],
+  "text" :
+  [
+    {
+      "color" :
+      {
+        "a" : 255,
+        "b" : 255,
+        "g" : 255,
+        "r" : 255
+      },
+      "name" : "text_win",
+      "size" : 64,
+      "tag" : "Win"
+    },
+    {
+      "color" :
+      {
+        "a" : 255,
+        "b" : 255,
+        "g" : 255,
+        "r" : 255
+      },
+      "name" : "text_lose",
+      "size" : 64,
+      "tag" : "Lose"
+    }
+  ],
+  "winSound" : "sound_win",
+  "winText" :
+  {
+    "text" : "text_win",
+    "x" : 500,
+    "y" : 350
+  }
+}

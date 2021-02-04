@@ -1,0 +1,7 @@
+{
+    "FPS" : ["FPS: ", "FPS: ", "FPS: "],
+    "Lives" : ["Lives: ", "Vidas: ", "ライブ: "],
+    "Score" : ["Score: ", "Puntuación: ", "スコア: "],
+    "Win" : ["You Win!", "¡Ganas!", "しょうしゃ!"],
+    "Lose" : ["You Lose...", "Pierdes...", "はいしゃ..."]
+}

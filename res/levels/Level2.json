@@ -1,0 +1,151 @@
+{
+  "blocks" :
+  {
+    "grid" :
+    [
+      "      x     x       ",
+      "       x   x        ",
+      "      xxxxxxx       ",
+      "     xx xxx xx      ",
+      "    xxxxxxxxxxx     ",
+      "    x xxxxxxx x     ",
+      "    x x     x x     ",
+      "       xx xx        ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    ",
+      "                    "
+    ],
+    "sprite" : "sprite_block_blue"
+  },
+  "loseText" :
+  {
+    "text" : "text_lose",
+    "x" : 600,
+    "y" : 350
+  },
+  "player" :
+  {
+    "speed" : 400,
+    "sprite" : "sprite_paddle",
+    "lives" : 3
+  },
+  "ball": {
+      "sprite": "sprite_ball",
+      "speed": 400,
+      "blockBounceSound" : "sound_bounce_block",
+      "paddleBounceSound" : "sound_bounce_paddle",
+      "loseLifeSound" : "sound_lose_life"
+  },
+  "score" :
+  {
+    "text" : "text_score",
+    "x" : 20,
+    "y" : 20
+  },
+  "size" : 64,
+  "sprites" :
+  [
+    {
+      "file" : "element_blue_rectangle.png",
+      "name" : "sprite_block_blue"
+    },
+    {
+      "file" : "ballGrey.png",
+      "name" : "sprite_ball"
+    },
+    {
+      "file" : "paddleRed.png",
+      "name" : "sprite_paddle"
+    }
+  ],
+  "text" :
+  [
+    {
+      "color" :
+      {
+        "a" : 255,
+        "b" : 255,
+        "g" : 255,
+        "r" : 255
+      },
+      "name" : "text_score",
+      "size" : 64,
+      "tag" : "Score"
+    },
+    {
+      "color" :
+      {
+        "a" : 255,
+        "b" : 255,
+        "g" : 255,
+        "r" : 255
+      },
+      "name" : "text_win",
+      "size" : 64,
+      "tag" : "Win"
+    },
+    {
+      "color" :
+      {
+        "a" : 255,
+        "b" : 255,
+        "g" : 255,
+        "r" : 255
+      },
+      "name" : "text_lose",
+      "size" : 64,
+      "tag" : "Lose"
+    },
+    {
+      "color" :
+      {
+        "a" : 255,
+        "b" : 255,
+        "g" : 255,
+        "r" : 255
+      },
+      "name" : "text_lives",
+      "size" : 64,
+      "tag" : "Lives"
+    }
+  ],
+  "sounds" : 
+  [
+    {
+      "file" : "BreakoutBounceBlock.wav",
+      "name" : "sound_bounce_block"
+    },
+    {
+      "file" : "BreakoutBouncePaddle.wav",
+      "name" : "sound_bounce_paddle"
+    },
+    {
+      "file" : "BreakoutLoseLife.wav",
+      "name" : "sound_lose_life"
+    },
+    {
+      "file" : "BreakoutLose.wav",
+      "name" : "sound_lose"
+    }
+  ],
+  "music" :
+  {
+    "file" : "BreakoutMusic.ogg",
+    "name" : "music"
+  },
+  "winText" :
+  {
+    "text" : "text_win",
+    "x" : 600,
+    "y" : 350
+  },
+  "livesText" :
+  {
+      "text" : "text_lives",
+      "x" : 1000,
+      "y" : 20
+  },
+  "loseSound" : "sound_lose"
+}

@@ -1,0 +1,148 @@
+{
+  "blocks" : 
+  {
+    "grid" : 
+    [
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "                                        ",
+      "       s  s                             ",
+      "      ss  ss                            ",
+      "     sss  sss                           ",
+      "gggggggggggggggggg    gggggggggggggggggg",
+      "ssssssssssssssssss    ssssssssssssssssss",
+      "ssssssssssssssssss    ssssssssssssssssss",
+      "ssssssssssssssssssssssssssssssssssssssss",
+      "ssssssssssssssssssssssssssssssssssssssss",
+      "ssssssssssssssssssssssssssssssssssssssss",
+      "ssssssssssssssssssssssssssssssssssssssss"
+    ],
+    "spriteSheet" : "sprite_block"
+  },
+  "collectibles" : 
+  [
+    {
+      "x" : 608.0,
+      "y" : 416.0
+    },
+    {
+      "x" : 640.0,
+      "y" : 416.0
+    },
+    {
+      "x" : 288.0,
+      "y" : 320.0
+    }
+  ],
+  "enemies" : 
+  [
+    {
+      "x" : 576.0,
+      "y" : 544.0
+    },
+    {
+      "x" : 672.0,
+      "y" : 544.0
+    },
+    {
+      "x" : 288.0,
+      "y" : 416.0
+    }
+  ],
+  "goal" : 
+  {
+    "x" : 1000.0,
+    "y" : 400.0
+  },
+  "player" : 
+  {
+    "gravity" : 25,
+    "h" : 32,
+    "jumpSpeed" : 12,
+    "speed" : 200,
+    "spriteSheet" : "sprite_character",
+    "w" : 32,
+    "x" : 1.0,
+    "y" : 14.0,
+    "jumpSound" : "sound_jump",
+    "pickupCollectibleSound" : "sound_collectible"
+  },
+  "size" : 32,
+  "text": [
+      {
+          "name": "text_score",
+          "tag": "Score",
+          "color": { "r": 255, "g": 255, "b": 255, "a": 255 },
+          "size": 64
+      },
+      {
+          "name": "text_win",
+          "tag": "Win",
+          "color": { "r": 255, "g": 255, "b": 255, "a": 255 },
+          "size": 64
+      },
+      {
+          "name": "text_lose",
+          "tag": "Lose",
+          "color": { "r": 255, "g": 255, "b": 255, "a": 255 },
+          "size": 64
+      }
+  ],
+  "sounds" : 
+  [
+    {
+      "file" : "PlatformerCollectible.wav",
+      "name" : "sound_collectible"
+    },
+    {
+      "file" : "PlatformerJump.wav",
+      "name" : "sound_jump"
+    },
+    {
+      "file" : "PlatformerLose.wav",
+      "name" : "sound_lose"
+    },
+    {
+      "file" : "PlatformerWin.wav",
+      "name" : "sound_win"
+    }
+  ],
+  "music" :
+  {
+    "file" : "PlatformerMusic.wav",
+    "name" : "music"
+  },
+  "spriteSheets" : 
+  [
+    {
+        "name": "sprite_character",
+        "file": "characters.png",
+        "spriteSize": 32
+    },
+    {
+        "name": "sprite_block",
+        "file": "tiles.png",
+        "spriteSize": 32
+    }
+  ],
+  "score": {
+      "x": 20, "y": 20, "text": "text_score"
+  },
+  "winText": {
+      "x": 600, "y": 350, "text": "text_win"
+  },
+  "loseText": {
+      "x": 600, "y": 350, "text": "text_lose"
+  },
+  "winSound" : "sound_win",
+  "loseSound" : "sound_lose"
+}

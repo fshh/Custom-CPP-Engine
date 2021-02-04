@@ -1,0 +1,25 @@
+Must Have
+M1:
+- Top-down 2D dungeon crawler
+- Ranged combat [X]
+- 1 Type of gun [X]
+- 1 type of enemy [X]
+M2:
+- 2 types of guns [X]
+- 3 enemy types [X]
+- Have to clear a certain percentage of enemies to progress [X]
+
+Should Have
+M1:
+- Health pickups [X]
+M2:
+- Dodge roll/dash [X]
+
+Could Have
+M2:
+- Enemies drop collectible bones, spent for upgrades between levels
+- Ammo
+
+Won't Have
+- Randomly generated levels
+- Boss battles
