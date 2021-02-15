@@ -19,4 +19,5 @@ This is a custom C++ 2D game engine, made using [SDL](https://www.libsdl.org/). 
 - Custom math library
 - Framerate capping
 - State machines
+- Interactive visual level editor
 - HTML-viewable documentation generation with Doxygen
