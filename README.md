@@ -1,5 +1,5 @@
 # Custom C++ Engine
-This is a custom C++ 2D game engine, made using SDL. It was made by a team of 4 programmers over 3 months for the final project of our Building Game Engines class.
+This is a custom C++ 2D game engine, made using [SDL](https://www.libsdl.org/). It was made by a team of 4 programmers over 3 months for the final project of our Building Game Engines class.
 
 ## Contents
 - the base engine code
@@ -13,9 +13,10 @@ This is a custom C++ 2D game engine, made using SDL. It was made by a team of 4 
 - A small [Nuclear Throne](https://store.steampowered.com/app/242680/Nuclear_Throne/) clone
 
 ## Engine Features
-- Custom math library
 - Resource caching (textures, sounds, fonts, etc.)
+- Entity-component system
+- 2D physics & collision detection
+- Custom math library
 - Framerate capping
 - State machines
-- 2D collision detection
 - HTML-viewable documentation generation with Doxygen
